@@ -38,6 +38,14 @@ package body Arch.PCI is
       return 0;
    end Enumerate_Devices;
 
+   function Enumerate_Devices
+      (Vendor_ID : Unsigned_16;
+       Device_ID : Unsigned_16) return Natural
+   is
+   begin
+      return 0;
+   end Enumerate_Devices;
+
    procedure Search_Device
       (Device_Class : Unsigned_8;
        Subclass     : Unsigned_8;
